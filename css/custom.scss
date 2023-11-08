@@ -4,6 +4,22 @@
 
 // Include any default variable overrides here (though functions won't be available)
 
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap'); 
+
+$font-family: 'Inconsolata', monospace;
+
+$Magenta_Haze: #9E4770;
+$Lavender-Pink: #F7ACCF;
+$Alice-Blue: #E8F0FF;
+$Scarlet: #FF331F;
+$Raisin-Black: #1B1725;
+
+$primary: $Magenta-Haze;
+$success: $Lavender-Pink;
+$danger: $Alice-Blue;
+$warning: $Scarlet;
+$info: $Raisin-Black;
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
