@@ -1,0 +1,203 @@
+
+
+body{
+    background-image: linear-gradient(to bottom right, black, purple, white);
+    font-family: 'Inconsolata', monospace;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 30rem;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+} 
+
+.content-hidden {
+    display: none;
+}
+
+.content-show {
+    display: inline-block;
+}
+
+.glass{
+    border: 2px solid #fff;
+    color: #fff;
+    background: rgba(217, 217, 217, 0.152);
+    height: 80vh;
+    width: 60%;
+    border-radius: 30px;
+    box-shadow: 0 0 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.c-img{
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    filter: brightness(1.0);
+    border-radius: 20px;
+}
+
+
+.dashboard{
+    flex: 1;
+    border-right: 3px solid #fff;
+    max-width: 22.5%;
+    background: rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 6px;
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+    z-index: 1;
+}
+
+ul{
+    list-style: none;
+    align-items: left;
+}
+
+.user{
+    font-size: 25px;
+    text-align: left;
+    height: 12%;
+    text-decoration: underline;
+}
+
+.info{
+    text-align: left;
+}
+a{
+    color: #1fecff;
+}
+
+.information{
+    width: 50%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 0 6;
+    flex: 1;
+    display: flex;
+}
+ .btn{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    background: none;
+    border: 2px solid #fff;
+    border-right: none;
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+    position: relative;
+    padding: 7px 7px;
+    padding-left: 10px;
+    color: #fff;
+    box-shadow: 0 0 6px;
+    transition: 0.7s;
+    transform-origin: left;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    font-family: 'Inconsolata', monospace;
+}
+
+ .btn:hover{
+    color: #000;
+    cursor: pointer;
+}
+.btn::before{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+    transition: transform 0.7s;
+    transform-origin: right;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+.btn1::before{
+    transform: scaleX(0);
+}
+.btn1:hover::before{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    transform: scaleX(1);
+}
+.btn2{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    background: none;
+    border: 2px solid #fff;
+    border-right: none;
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+    position: relative;
+    padding: 7px 7px;
+    padding-left: 10px;
+    color: #fff;
+    box-shadow: 0 0 6px;
+    transition: 0.7s;
+    transform-origin: left;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    font-family: 'Inconsolata', monospace;
+}
+.btn2:hover{
+    color: #000f;
+    cursor: pointer;
+}
+
+.btn2::before{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+    transition: transform 0.7s;
+    transform-origin: right;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+.btn-active{
+    background: #fff;
+    color: #000;
+    transition: transform 0.7s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    transform: scaleX(1);
+}
+.cont{
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.conts{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}

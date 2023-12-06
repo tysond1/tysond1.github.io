@@ -1,61 +1,83 @@
 <!doctype html>
-<html>
-<head>
+<html lang="en" class="h-100">
+  <head>
     <title>Tyson Daniels' Portfolio Page</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css/custom.css">
-</head>
-<body class="bg-black text-light">
-  <div class="card col-8 offset-2 mb-3 bg-black text-light" style="max-width: 840px;">
-    <div class="row g-0">
-      <div class="col-md-4">
-      <img src="images/profilepic.jpg" class="card-img-top" alt="My profile picture">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-        <h5 class="card-title">About Me</h5>
-        <p class="card-text">During my childhood, I had to move from place to place quite frequently. In response, I developed a psychological craving for travel. I need to see this world. I am also a college student at Oregon State University - Cascades working towards my Bachelors in C.S.</p>
+    <link rel="stylesheet" href="css/custom1.css">
+    <script src="js/custom.js"></script>
+
+  </head>
+  <body>
+    <main>
+      <section class="glass">
+        <div class="dashboard">
+          <div class="user">
+            <p>Dashboard</p>
+          </div>
+          <div class="info">
+              <button id="aboutButton" class="nav-button btn2 btn1 button button-show" href="#" onClick="clickContent('about')">Me</button>
+              <button id="experienceButton" class="nav-button btn btn1" href="#" onClick="clickContent('experience')">Experience</button>
+              <button id="skillsButton" class="nav-button btn2 btn1" href="#" onClick="clickContent('skills')">Skills</button>
+              <button id="projectsButton" class=" nav-button btn btn1" href="#" onClick="clickContent('projects')">Projects</button>
+              <button id="repositoriesButton" class="nav-button btn2 btn1" href="#" onClick="clickContent('repositories')">My Repositories</button>
+              <button id="educationButton" class="nav-button btn btn1" href="#" onClick="clickContent('education')">Education</button>
+              <button id="awardsButton" class="nav-button btn2 btn1" href="#" onClick="clickContent('awards')">Awards</button>
+              <button id="socialButton" class="nav-button btn btn1" href="#" onClick="clickContent('social')">Social Media</button>
+              <button id="contactButton" class="nav-button btn2 btn1" href="#" onClick="clickContent('contact')">Contact Me</button>
+          </div>
         </div>
-      </div>
-    </div>
-</div>
-  favicon icon by Icons8
-</body>
+        <div class="information"> 
+          <div class="content content-show" id="about">
+            <h1 class="cont">I am Tyson Daniels.</h1>
+            <div class="conts">
+            <img src="images/MyMotorcycle.jpg" class="c-img"></img>
+            <p>During my childhood, I had to move from place to place quite frequently. In response, I developed a psychological craving for travel. I need to see this world. I am also a college student at Oregon State University - Cascades working towards my Bachelors in C.S.</p>
+          </div>
+          </div>
+          <div class="content content-hidden" id="experience">
+            <h1 class="cont">Experience</h1>
+              <div>
+              <p>Created a "Wordle" knock off in class.</p>
+              </div>
+            </div>
+          <div class="content content-hidden" id="skills">
+            <h1 class="cont">Skills</h1>
+            <p>Leetcode Profile - <a href="https://leetcode.com/danielty/" target="_blank"><img src="images/LeetCodeLogo.webp" width="20"/>https://leetcode.com/danielty/</a></p>
+          </div>
+          <div class="content content-hidden" id="projects">
+            <h1 class="cont">Projects</h1>
+            <p>I don't have any personal projects at the moment but I do want to creat a similar game to Super Mario Bros.</p>
+          </div>
+          <div class="content content-hidden" id="repositories">
+            <h1 class="cont">My Repositories</h1>
+            <p>GitHub Repository - <a href="https://github.com/tysond1/tysond1.github.io.git" target="_blank"><img src="images/GitHubLogo.png" width="20"/>https://github.com/tysond1/tysond1.github.io</a>
+              I created this repository using HTML.</p>
+          </div>
+          <div class="content content-hidden" id="education">
+            <h1 class="cont">Education</h1>
+            <p>Working towards my Bachelors in C.S.</p>
+          </div>
+          <div class="content content-hidden" id="awards">
+            <h1 class="cont">Awards</h1>
+            <p>Member of the Delta Epsilon Tau National Honors Society. This was granted to me by James Madison Highschool.</p>
+          </div>
+          <div class="content content-hidden" id="social">
+            <h1 class="cont">Social Media</h1>
+            <p>GitHub - <a href="https://github.com/tysond1" target="_blank"><img src="images/GitHubLogo.png" width="20"/>tysond1</a>
+              LinkedIn - <a href="https://www.linkedin.com/in/tyson-daniels-580934297/" target="_blank"><img src="images/LinkedInLogo.webp" width="20"/>Tyson Daniels</a></p>
+          </div>
+          <div class="content content-hidden" id="contact">
+            <h1 class="cont">Contact Me</h1>
+            <p>Email: <a href="mailto:username@oregonstate.edu" target="_blank">danielty@oregonstate.edu</a></p>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </body>
+
+
 </html>
-    
-<div>
-  <h2>Experience</h2>
-  <p>Created a "Wordle" knock off in class.</p>
-</div>
-<div>
-  <h2>Skills</h2>
-  <p>Leetcode Profile - <a href="https://leetcode.com/danielty/" target="_blank"><img src="images/LeetCodeLogo.webp" width="20"/>https://leetcode.com/danielty/</a></p>
-</div>
-<div>
-  <h2>Projects</h2>
-  <p>I don't have any personal projects at the moment but I do want to create a game similar to Super Mario Bros.</p>
-</div>
-<div>
-  <h2>My Repositories</h2>
-   <p>GitHub Repository - <a href="https://github.com/tysond1/tysond1.github.io.git" target="_blank"><img src="images/GitHubLogo.png" width="20"/>https://github.com/tysond1/tysond1.github.io</a><p></p>
-        I created this repository using HTML. </p>
-</div>
-<div>
-  <h2>Education</h2>
-  <p>Working towards my Bachelors in C.S.</p>
-</div>
-<div>
-  <h2>Awards</h2>
-  <p>Member of the Delta Epsilon Tau National Honors Society. This was granted to me by James Madison Highschool.</p>
-</div>
-<div>
-  <h2>Social Media</h2>
-  <p>GitHub - <a href="https://github.com/tysond1" target="_blank"><img src="images/GitHubLogo.png" width="20"/>tysond1</a><p></p>
-     LinkedIn - <a href="https://www.linkedin.com/in/tyson-daniels-580934297/" target="_blank"><img src="images/LinkedInLogo.webp" width="20"/>Tyson Daniels</a> </p>
-</div>
-<div>
-  <h2>Contact Me</h2>
-  <p>Email: <a href="mailto:username@oregonstate.edu" target="_blank">danielty@oregonstate.edu</a><p>
-</div>
+
+
+

@@ -8,10 +8,10 @@
 
 $font-family-base: 'Inconsolata', monospace;
 
-$Magenta_Haze: #9E4770;
+$Magenta-Haze: #9E4770;
 $Lavender-Pink: #F7ACCF;
 $Alice-Blue: #E8F0FF;
-$Scarlet: #FF331F;
+$Scarlet: #dddddd;
 $Raisin-Black: #1B1725;
 
 $primary: $Magenta-Haze;
@@ -19,6 +19,13 @@ $success: $Lavender-Pink;
 $danger: $Alice-Blue;
 $warning: $Scarlet;
 $info: $Raisin-Black;
+
+
+
+
+
+
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
